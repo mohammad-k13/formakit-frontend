@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write src/**/*.ts",
+    "deploy": "npx vercel deploy -y",
+    "git:push": "git push organ main; git push repo main"
   },
   "dependencies": {
     "react": "^19.0.0",
